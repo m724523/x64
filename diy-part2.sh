@@ -14,6 +14,6 @@ make download -j8
 make download -j8
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.0.200/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.0.254/g' package/base-files/files/bin/config_generate
 sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 sed -i "/sed -i 's/root::0:0:99999:7:::/root:$1$V4UetPzk$CYXluq4wUazHjmCDBCqXF.:0:0:99999:7:::/g' /etc/shadow/d"  package/lean/default-settings/files/zzz-default-settings
